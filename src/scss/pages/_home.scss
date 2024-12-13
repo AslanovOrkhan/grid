@@ -59,4 +59,103 @@
     
 // }
 
- 
+.wrapper{
+    width: 100%;
+    height: 100vh;
+     padding: 2rem 10%;
+    display: grid;
+    gap: 15px;
+    
+    .item{
+         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       &:first-child{
+       grid-column: 1 / 4;
+       grid-row: 1 / 4;
+       background-image: url(https://pastposters.com/cdn/shop/files/star-wars-rise-of-skywalker-cinema-quad-movie-poster-_2_21d60cf3-8530-44b2-a0ef-c0c94ba98c77.jpg?v=1730458347);
+       }
+       &:nth-child(2){
+        grid-column: 1 / 4;
+        grid-row: 4 / 6;
+        background-image: url(https://www.vintagemovieposters.co.uk/wp-content/uploads/2024/09/IMG_4671-scaled.jpeg);
+        }
+        &:nth-child(3){
+            grid-column: 4 / 6;
+            grid-row: 1 / 2;
+            background-image: url(https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/08/LandOfMine_CCWebsite_1600x900-1.jpg);
+        }
+        &:nth-child(4){
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+            background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlukUpi6b7kHmDOVilYWD1DRjr7smYbj8RhNqQseFnZasZhlQWF39uV3-NpUcUdKF1Qw00JQAfslsR7ibvLg6VHVGZ7z5bySNYZbYuHy6Gl8M3rx0L9k36BTpHe2sbhQRSOU-N6qyZPJH/s1600/Make+Movie+Poster+Design+Photoshop+Tutorial.jpg);
+        }
+        &:nth-child(5){
+            grid-column: 5 / 6;
+            grid-row: 2 / 5;
+            background-image: url(https://i0.wp.com/www.impawards.com/2009/posters/orphan_ver2_xlg.jpg);
+        }
+        &:nth-child(6){
+            grid-column: 5 / 6;
+            grid-row: 5 / 6;
+            background-image: url(https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2023/04/AGoodPerson_1-Sht_Art-min-min.jpg);
+        }
+        &:nth-child(7){
+            grid-column: 4 / 5;
+            grid-row: 3 / 6;
+            background-image: url(https://m.media-amazon.com/images/I/81XjzlJ364L.jpg);
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .wrapper{
+        width: 100%;
+        height: auto;
+         padding: 2rem 10%;
+        display: grid;
+        gap: 15px;
+        
+        .item{
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 30vh;
+           &:first-child{
+           grid-column: 1 / 6;
+           grid-row: 1 / 2;
+           background-image: url(https://pastposters.com/cdn/shop/files/star-wars-rise-of-skywalker-cinema-quad-movie-poster-_2_21d60cf3-8530-44b2-a0ef-c0c94ba98c77.jpg?v=1730458347);
+           }
+           &:nth-child(2){
+            grid-column: 1 / 6;
+            grid-row: 2 / 3;
+            background-image: url(https://www.vintagemovieposters.co.uk/wp-content/uploads/2024/09/IMG_4671-scaled.jpeg);
+            }
+            &:nth-child(3){
+                grid-column: 1 / 6;
+                grid-row: 3 / 4;
+                background-image: url(https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/08/LandOfMine_CCWebsite_1600x900-1.jpg);
+            }
+            &:nth-child(4){
+                grid-column: 1 / 6;
+                grid-row: 4 / 5;
+                background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIlukUpi6b7kHmDOVilYWD1DRjr7smYbj8RhNqQseFnZasZhlQWF39uV3-NpUcUdKF1Qw00JQAfslsR7ibvLg6VHVGZ7z5bySNYZbYuHy6Gl8M3rx0L9k36BTpHe2sbhQRSOU-N6qyZPJH/s1600/Make+Movie+Poster+Design+Photoshop+Tutorial.jpg);
+            }
+            &:nth-child(5){
+                grid-column: 1 / 6;
+                grid-row: 5 / 6;
+                background-image: url(https://i0.wp.com/www.impawards.com/2009/posters/orphan_ver2_xlg.jpg);
+            }
+            &:nth-child(6){
+                grid-column: 1 / 6;
+                grid-row: 6 / 7;
+                background-image: url(https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2023/04/AGoodPerson_1-Sht_Art-min-min.jpg);
+            }
+            &:nth-child(7){
+                grid-column: 1 / 6;
+                grid-row: 7 / 8;
+                background-image: url(https://m.media-amazon.com/images/I/81XjzlJ364L.jpg);
+            }
+        }
+    }
+}
